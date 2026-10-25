@@ -1,0 +1,424 @@
+
+
+
+<html>
+
+<head>
+
+    <title>Explore India</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            margin: 0;
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f2f5ef;
+
+            color: #243c32;
+
+        }
+
+        .container {
+
+            width: 94%;
+
+            max-width: 1200px;
+
+            margin: 25px auto;
+
+            display: grid;
+
+            grid-template-columns: 220px 1fr;
+
+            grid-template-rows: auto 1fr auto;
+
+            min-height: 650px;
+
+            border: 2px solid #245746;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow: 0 8px 25px #00000020;
+
+        }
+
+        /* LEFT SIDEBAR */
+
+        .sidebar {
+
+            grid-column: 1;
+
+            grid-row: 1 / 4;
+
+            background-color: #173f35;
+
+            color: white;
+
+            padding: 25px 15px;
+
+        }
+
+        .logo {
+
+            text-align: center;
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+            margin: 15px 0 35px;
+
+        }
+
+        .sidebar a {
+
+            display: block;
+
+            text-decoration: none;
+
+            color: white;
+
+            padding: 14px;
+
+            margin: 10px 0;
+
+            border-radius: 8px;
+
+            transition: 0.3s;
+
+        }
+
+        .sidebar a:hover {
+
+            background-color: #387963;
+
+        }
+
+        /* HEADER */
+
+        header {
+
+            grid-column: 2;
+
+            grid-row: 1;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            color: white;
+
+            background: linear-gradient(120deg, #245746, #65a58b);
+
+        }
+
+        header h1 {
+
+            font-size: 36px;
+
+            margin: 0 0 12px;
+
+        }
+
+        header p {
+
+            font-size: 16px;
+
+            margin: 0;
+
+        }
+
+        /* MAIN CONTENT */
+
+        main {
+
+            grid-column: 2;
+
+            grid-row: 2;
+
+            padding: 25px;
+
+            text-align: center;
+
+        }
+
+        .welcome {
+
+            background: white;
+
+            border-radius: 15px;
+
+            padding: 20px;
+
+            box-shadow: 0 4px 15px #00000010;
+
+        }
+
+        .welcome img {
+
+            width: 100%;
+
+            max-width: 650px;
+
+            height: 270px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+        }
+
+        .welcome h2 {
+
+            color: #245746;
+
+            margin-bottom: 10px;
+
+        }
+
+        .welcome p {
+
+            color: #59685f;
+
+            line-height: 1.7;
+
+        }
+
+        .button {
+
+            display: inline-block;
+
+            background-color: #d88a42;
+
+            color: white;
+
+            padding: 13px 22px;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+
+            margin-top: 10px;
+
+            transition: 0.3s;
+
+        }
+
+        .button:hover {
+
+            background-color: #b96c29;
+
+        }
+
+        /* FOOTER */
+
+        footer {
+
+            grid-column: 2;
+
+            grid-row: 3;
+
+            text-align: center;
+
+            padding: 20px;
+
+            color: white;
+
+            background-color: #245746;
+
+        }
+
+        footer p {
+
+            margin: 6px;
+
+        }
+
+        /* PHONE SCREEN */
+
+        @media (max-width: 650px) {
+
+            .container {
+
+                width: 96%;
+
+                margin: 10px auto;
+
+                grid-template-columns: 1fr;
+
+                grid-template-rows: auto auto 1fr auto;
+
+            }
+
+            .sidebar {
+
+                grid-column: 1;
+
+                grid-row: 2;
+
+                padding: 10px;
+
+            }
+
+            .logo {
+
+                margin: 8px;
+
+            }
+
+            .sidebar nav {
+
+                display: flex;
+
+                justify-content: center;
+
+                flex-wrap: wrap;
+
+            }
+
+            .sidebar a {
+
+                padding: 10px;
+
+                margin: 3px;
+
+            }
+
+            header {
+
+                grid-column: 1;
+
+                grid-row: 1;
+
+                padding: 25px 10px;
+
+            }
+
+            header h1 {
+
+                font-size: 29px;
+
+            }
+
+            main {
+
+                grid-column: 1;
+
+                grid-row: 3;
+
+                padding: 12px;
+
+            }
+
+            .welcome img {
+
+                height: 200px;
+
+            }
+
+            footer {
+
+                grid-column: 1;
+
+                grid-row: 4;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">🌍 Travel</div>
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="places.html">📍 Destinations</a>
+
+            <a href="#about">ℹ️ About</a>
+
+            <a href="#contact">✉️ Contact</a>
+
+        </nav>
+
+    </aside>
+
+    <header>
+
+        <h1>Explore India 🇮🇳</h1>
+
+        <p>Discover beautiful places and create wonderful memories.</p>
+
+    </header>
+
+    <main>
+
+        <section class="welcome">
+
+            <img
+
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+
+                alt="Beautiful mountain travel landscape">
+
+            <h2>Welcome to My Travel Website!</h2>
+
+            <p>
+
+                From peaceful beaches to green mountains,
+
+                discover the beauty of India and find your
+
+                next favourite destination.
+
+            </p>
+
+            <a class="button" href="places.html">
+
+                Explore Places →
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer id="contact">
+
+        <p id="about"><strong>About Explore India</strong></p>
+
+        <p>Your little guide to wonderful places in India.</p>
+
+        <p>© 2026 Explore India | Happy Travelling!</p>
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>

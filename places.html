@@ -1,0 +1,219 @@
+
+
+
+
+<html>
+
+<head>
+
+<title>Beautiful Places in India</title>
+
+<style>
+
+body {
+
+    font-family: Arial;
+
+    text-align: center;
+
+    background-color: #fff8e7;
+
+    margin: 0;
+
+}
+
+h1 {
+
+    background-color: #26352d;
+
+    color: white;
+
+    padding: 25px;
+
+    margin: 0;
+
+}
+
+.place {
+
+    background-color: white;
+
+    margin: 25px auto;
+
+    padding: 20px;
+
+    width: 80%;
+
+    max-width: 800px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 10px #cccccc;
+
+}
+
+.mainpic {
+
+    width: 95%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+}
+
+.morepics {
+
+    display: none;
+
+}
+
+.morepics img {
+
+    width: 90%;
+
+    max-width: 350px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin: 10px;
+
+}
+
+p {
+
+    font-size: 18px;
+
+}
+
+a {
+
+    color: teal;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Beautiful Places in India</h1>
+
+<div class="place">
+
+    <h2>Goa 🏖️</h2>
+
+    <img class="mainpic"
+
+    onclick="showPics('goa')"
+
+    src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=80"
+
+    alt="Goa beach">
+
+    <p>Enjoy beautiful beaches and sunsets.</p>
+
+    <p>Click the picture to see more photos!</p>
+
+    <div id="goa" class="morepics">
+
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=700&q=80" alt="Sea waves">
+
+        <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=700&q=80" alt="Tropical beach">
+
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Beautiful beach">
+
+    </div>
+
+</div>
+
+<div class="place">
+
+    <h2>Kerala 🌴</h2>
+
+    <img class="mainpic"
+
+    onclick="showPics('kerala')"
+
+    src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=80"
+
+    alt="Kerala landscape">
+
+    <p>Explore green hills and peaceful backwaters.</p>
+
+    <p>Click the picture to see more photos!</p>
+
+    <div id="kerala" class="morepics">
+
+        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=700&q=80" alt="Green forest">
+
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80" alt="Forest landscape">
+
+    </div>
+
+</div>
+
+<div class="place">
+
+    <h2>Jaipur 🏰</h2>
+
+    <img class="mainpic"
+
+    onclick="showPics('jaipur')"
+
+    src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1000&q=80"
+
+    alt="Jaipur palace">
+
+    <p>Discover royal palaces and historic forts.</p>
+
+    <p>Click the picture to see more photos!</p>
+
+    <div id="jaipur" class="morepics">
+
+        <img src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=700&q=80" alt="Historic architecture">
+
+        <img src="https://images.unsplash.com/photo-1592639296346-560c37a0f711?auto=format&fit=crop&w=700&q=80" alt="Indian palace">
+
+    </div>
+
+</div>
+
+<p><a href="index.html">← Back to Home</a></p>
+
+<script>
+
+function showPics(place) {
+
+    var gallery = document.getElementById(place);
+
+    if (gallery.style.display === "block") {
+
+        gallery.style.display = "none";
+
+    } else {
+
+        gallery.style.display = "block";
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
